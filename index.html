@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="color-scheme" content="dark light" />
     <title>Закрывающий тег</title>
+    <link rel="icon" href="./svg/favicon.ico" sizes="any" />
+    <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./images/favicon.png" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -72,7 +75,8 @@
                     подумать, как новые знания могут повлиять на ваше будущее.
                   </p>
                   <p class="card__text">
-                    Место для ваших воспоминаний о начале обучения.
+                    Было много сомнений и неуверенности в себе, но если ничего
+                    не начинать, ни к чему и не придёшь
                   </p>
                 </div>
                 <div class="card__button">
@@ -143,7 +147,9 @@
                     сложно? что, если я не справлюсь?
                   </p>
                   <p class="card__text">
-                    Место для ваших воспоминаний о начале обучения.
+                    На первом спринте, ощущаешь себя как будто прыгаешь с
+                    парашюта, перед прыжком очень страшно, но когда ты уже
+                    летишь вниз, ощущаешь только эйфорию.
                   </p>
                 </div>
                 <div class="card__button">
@@ -212,7 +218,8 @@
                     поверить в себя.
                   </p>
                   <p class="card__text">
-                    Место для ваших воспоминаний о начале обучения.
+                    На этом этапе и последующих, не было никаких мыслей, что не
+                    получится, раз уж я начал, надо идти и заканчивать
                   </p>
                 </div>
                 <div class="card__button">
@@ -282,7 +289,10 @@
                     того, чтобы сделать идеально, старались просто сделать.
                   </p>
                   <p class="card__text">
-                    Место для ваших воспоминаний о начале второго спринта.
+                    Я человек, который делает всё так, работает и слава богу,
+                    визуально похоже и отлично, для меня очень тяжело
+                    подстраивать всё под макет, особенно, не люблю, когда что то
+                    съехало ты поправляешь и съезжает что то другое.
                   </p>
                 </div>
                 <div class="card__button">
@@ -353,7 +363,9 @@
                     есть единомышленники, не правда ли?
                   </p>
                   <p class="card__text">
-                    Место для ваших воспоминаний об окончании второго спринта.
+                    Самые главные люди это семья, которая всегда поддержит
+                    тебя,но и одногрупнки, которые так же учатся и вместе
+                    веселей дорога
                   </p>
                 </div>
                 <div class="card__button">
@@ -421,7 +433,8 @@
                     Значит, пришло время посмотреть на задачу под другим углом.
                   </p>
                   <p class="card__text">
-                    Место для ваших воспоминаний о начале третьего спринта.
+                    Благодоря адаптиву, которому нас научили, я стал смотреть на
+                    страницы в интернете по другому.
                   </p>
                 </div>
                 <div class="card__button">
@@ -491,7 +504,10 @@
                     Вспомните, откуда вы её черпали.
                   </p>
                   <p class="card__text">
-                    Место для ваших воспоминаний об окончании третьего спринта.
+                    Мы все сюда пришли, получить навык, я прекрасно понимал и
+                    понимаю что это очень не простой путь, я мотивирован и готов
+                    идти дальше. Иногда если не получается, проще пойти
+                    отдохнуть и вернуться с чистой головой
                   </p>
                 </div>
                 <div class="card__button">
@@ -563,8 +579,8 @@
                     и есть результат.
                   </p>
                   <p class="card__text">
-                    Место, чтобы остановиться, подумать и написать, что вы
-                    чувствуете в этой точке пути.
+                    Я знаю, что я ничего не знаю. Чем дольше учусь тем больше
+                    это понимаю.
                   </p>
                 </div>
                 <div class="card__button">
@@ -614,64 +630,45 @@
       </section>
       <footer class="footer">
         <button
-          class="footer__button button"
-          type="button" onclick="window['dialog-id'].showModal()" aria-controls="dialog-id"
+          class="footer__btn button"
+          type="button"
+          onclick="window['dialog-id'].showModal();"
+          aria-controls="dialog-id"
         >
           <svg
-            class="disket"
-            fill="none"
+            class="footer__floppy"
             xmlns="http://www.w3.org/2000/svg"
-            width="29"
-            height="28"
             viewBox="0 0 29 28"
+            aria-hidden="true"
           >
             <use href="./svg/floppy-min.svg#floppy"></use>
           </svg>
-          <span class="footer__text button__text">Сохранить на память</span>
+          <p class="footer__text">Сохранить на память</p>
         </button>
-        <dialog class="footer__popup popup" id="dialog-id" close>
-          <div class="popup__flex-container">
+        <dialog id="dialog-id" class="popup">
+          <div class="popup__content">
             <svg
-            class="disket"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            width="29"
-            height="28"
-            viewBox="0 0 29 28"
-          >
-            <use href="./svg/floppy-min.svg#floppy"></use>
-          </svg>
-          <p class="popup__text">Вставьте
-            дискету, чтобы продолжить</p>
-          </div>
-   <form action="#" method="dialog">
-    <button class="popup__btn button" type="submit" onclick="window['dialog-id'].closeWindow()" aria-controls="dialog-id">ок</button>
-   </form>
-        </dialog>
-        <!-- <dialog id="dialog-id" class="footer__dialog">
-          <div class="dialog-content">
-            <svg
-              class="disket"
-              fill="none"
+              class="popup__floppy"
               xmlns="http://www.w3.org/2000/svg"
-              width="29"
-              height="28"
+              width="39px"
+              height="39px"
               viewBox="0 0 29 28"
+              fill="currentColor"
+              aria-hidden="true"
             >
               <use href="./svg/floppy-min.svg#floppy"></use>
             </svg>
-            <p class="dialog-text">Вставьте дискету, чтобы продолжить</p>
+            <p class="popup__text">Вставьте дискету, чтобы продолжить</p>
           </div>
-          <form method="dialog">
+          <form method="dialog" class="popup__dialog">
             <button
-              class=""
+              class="popup__btn button"
               type="submit"
-              onclick="window['dialog-id'].close()"
-              aria-controls="dialog-id"
+              onclick="window['save-dialog'].close();"
             >
-              <span class="button__text">ок</span>
+              <span class="popup__text-close">ок</span>
             </button>
-          </form> -->
+          </form>
         </dialog>
       </footer>
     </main>
