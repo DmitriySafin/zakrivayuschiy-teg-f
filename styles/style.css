@@ -114,14 +114,9 @@
   margin-block-start: 102px;
   font-family: var(--main-font);
 }
-.content {
-}
-
 .content__list {
   display: grid;
   gap: 51px;
-}
-.content__list-item {
 }
 .content__card {
   display: grid;
@@ -139,8 +134,7 @@
   position: relative;
   overflow: hidden;
 }
-.card__picture {
-}
+
 .card__images {
   object-fit: cover;
   object-position: center;
