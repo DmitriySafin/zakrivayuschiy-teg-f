@@ -18,7 +18,7 @@
   box-sizing: border-box;
   font-family: var(--main-font);
   color: var(--themes-main-color);
-  padding: 102px 2px;
+  padding: 102px 2px 0 2px;
   background-image: var(--back-images);
   background-size: cover;
   background-attachment: fixed;
@@ -26,6 +26,7 @@
   min-inline-size: 320px;
   max-inline-size: 1440px;
   min-block-size: 100dvb;
+  font-variation-settings: "wght" var(--font-weight-subtitle);
 }
 .container {
   margin: auto;
@@ -127,7 +128,7 @@
 .card__title {
   padding: 4px 10px 6px 8px;
   font-size: 18px;
-  font-weight: var(--wgth);
+  font-variation-settings: "wght" var(--font-weight-title);
 }
 .card__container-img {
   position: relative;
@@ -166,7 +167,6 @@
 .card__text {
   font-size: 18px;
   line-height: 21px;
-  font-weight: var(--fght);
 }
 .card__button {
   display: flex;

@@ -17,9 +17,9 @@
     ),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #007f0c 0.01%, #004306);
-  --wgth: 785;
-  --fght: 465;
   --underline-header: #007f0c;
+  --font-weight-title: 785;
+  --font-weight-subtitle: 465;
 }
 
 :root.theme-light {
@@ -35,9 +35,10 @@
     ),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-  --wgth: 700;
-  --fght: 400;
+  --font-weight: 400;
   --underline-header: #000;
+  --font-weight-title: 700;
+  --font-weight-subtitle: 400;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -54,8 +55,8 @@
       ),
       repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
       linear-gradient(to bottom, #007f0c 0.01%, #004306);
-    --wgth: 785;
-    --fght: 465;
+    --font-weight-title: 785;
+    --font-weight-subtitle: 465;
     --underline-header: #007f0c;
   }
 }

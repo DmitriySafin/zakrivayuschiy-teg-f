@@ -12,8 +12,8 @@
     ),
     repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
     linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
-  --wgth: 700;
-  --fght: 400;
   --underline-header: #000;
   --back-like-icon: #ff0000;
+  --font-weight-subtitle: 400;
+  --font-weight-title: 700;
 }
