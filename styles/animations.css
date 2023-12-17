@@ -12,3 +12,133 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+/* Стрелочка в шапке */
+@keyframes arrow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-4px);
+  }
+}
+/* ********************************** */
+
+/* Фильтрц на картинки */
+.img-brightness {
+  filter: brightness(50%);
+  transition: 0.4s linear;
+}
+.img-brightness:hover {
+  filter: brightness(100%);
+}
+
+.img-blur {
+  filter: blur(2px);
+}
+.img-blur:hover {
+  filter: blur(0);
+}
+
+.img-saturate {
+  filter: saturate(0);
+}
+.img-saturate:hover {
+  filter: saturate(100%);
+}
+.img-many {
+  filter: invert(0) brightness(60%) saturate(20%) hue-rotate(150deg);
+}
+.img-many:hover {
+  filter: none;
+}
+
+.img-invert {
+  filter: invert(27%);
+}
+.img-invert:hover {
+  filter: invert(0);
+}
+.img-sepia {
+  filter: sepia(100%);
+}
+.img-sepia:hover {
+  filter: sepia(0%);
+}
+.img-gray {
+  filter: grayscale(0.8);
+}
+.img-gray:hover {
+  filter: grayscale(0);
+}
+/* ********************************** */
+
+/* Состояние hover у сердца */
+.card__icon-button:hover .core {
+  transition: fill 0.3s linear 0.03s;
+  fill: var(--themes-main-color);
+}
+.card__icon-button:hover .main-body {
+  transition: fill 0.3s linear;
+  fill: var(--themes-main-color);
+}
+/* ************************************** */
+
+/* Состояние active у сердца */
+.card__icon-button:active .core {
+  fill: var(--back-like-icon);
+  transition: fill 0.3s linear;
+}
+.card__icon-button:active .main-body {
+  fill: var(--back-like-icon);
+  transition: fill 0.3s linear;
+}
+/* ****************************************** */
+/* клик на сердце */
+.like-icon.is-liked .core {
+  fill: var(--back-like-icon);
+  transition: fill 0.3s linear;
+}
+.like-icon.is-liked .main-body {
+  fill: var(--back-like-icon);
+  transition: fill 0.3s linear;
+}
+.like-icon.is-liked .contour {
+  fill: var(--back-like-icon);
+  transition: fill 0.3s linear 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  animation-name: sparks;
+  animation-duration: 0.3s;
+  animation-delay: 0.1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+}
+
+.like-icon.is-liked .sparks {
+  animation-name: sparks;
+  animation-duration: 0.3s;
+  animation-delay: 0.3s;
+  animation-direction: alternate;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+}
+
+@keyframes heart {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.5);
+  }
+}
+
+@keyframes sparks {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
